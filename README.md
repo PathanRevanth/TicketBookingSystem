@@ -1,12 +1,10 @@
-# Cinema Ticket Booking System
+#Ticket Booking System
 
-![cinema](/cinema.gif)
 
-Cinema Ticket Booking System is a web application built with React and Java Spring Boot 3.2, allowing users to browse, search, and book movie tickets seamlessly.
 
 ## Table of Contents
 
-- [Cinema Ticket Booking System](#cinema-ticket-booking-system)
+- [Ticket Booking System](#ticket-booking-system)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Technologies](#technologies)
@@ -40,52 +38,6 @@ To get started with this project, you will need to have the following installed 
 - Maven 3+
 - MySQL 8+
 
-## Steps to Setup the Spring Boot Backend app
-
-1. **Clone the application**
-
-```zsh
-git clone https://github.com/EgonSaks/cinema-ticket-booking-system.git
-cd backend
-```
-2. **Installing and Starting MySQL**
-
-There are different ways to install MySQL. The following covers the easiest methods for [installing and starting MySQL on different platforms](https://dev.mysql.com/doc/mysql-getting-started/en/#mysql-getting-started-installing).
-
-3. **Create MySQL database**
-
-Open a terminal (command prompt in Microsoft Windows) and open a MySQL client as a user who can create new users.
-
-For example, on a Mac, use the following command;
-
-```zsh
-mysql -u root -p
-```
-
-```zsh
-mysql> CREATE DATABASE cinema;
-mysql> CREATE USER 'springuser'@'%' IDENTIFIED BY 'ThePassword';
-mysql> GRANT ALL PRIVILEGES ON cinema.* TO 'springuser'@'%';
-mysql> FLUSH PRIVILEGES;
-```
-
-[More info how to do it here](https://spring.io/guides/gs/accessing-data-mysql)
-
-4. **Change MySQL username and password as per your MySQL installation**
-
-	+ open `src/main/resources/application.properties` file.
-
-	+ change `spring.datasource.username` and `spring.datasource.password` properties as per your mysql installation
-
-5. **Run the app**
-
-	You can run the spring boot app by typing the following command
-
-	```zsh
-	mvn spring-boot:run
-	```
-
-	The backend application will be available at http://localhost:8080.
 
 ## Steps to Setup the React Frontend app
 
