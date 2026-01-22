@@ -1,6 +1,6 @@
 #Ticket Booking System
 
-
+Updated my READ.ME file for the purpose of practicing the Git & GitHub.
 
 ## Table of Contents
 
